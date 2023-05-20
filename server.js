@@ -3,7 +3,7 @@ const router = require('./routes/testRoute');
 require('dotenv').config();
 const cors = require('cors');
 const morgan = require('morgan');
-
+const connectDB = require("./config/db")
 
 const app = express();
 
@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cors())
 app.use(morgan('dev'))
 
-
+connectDB();
 app.use('/api/v1',router)
 app.get("/",(req,res) =>
 {
