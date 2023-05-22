@@ -73,5 +73,23 @@ const loginController = async (req,res) =>
         })
     }
 }
+const currentUserController = async (req,res) =>
+{
+    try {
+        console.log("here");
+        const user = await User.findOne({_id: req.body.userId});
+        return res.status(200).json({
+            message: "Fetched user successfully",
+            success: true,
+            user
+        })
+    } catch (error) {
+        return res.status(500).json({
+            message: "Unable to get current user",
+            success: false,
+            error
+        })
+    }
+}
 
-module.exports = {registerController,loginController}
+module.exports = {registerController,loginController,currentUserController}
