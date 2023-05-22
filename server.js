@@ -4,7 +4,7 @@ require('dotenv').config();
 const cors = require('cors');
 const morgan = require('morgan');
 const connectDB = require("./config/db")
-
+const authRoute = require("./routes/authRoute");
 const app = express();
 
 
@@ -15,6 +15,9 @@ app.use(morgan('dev'))
 
 connectDB();
 app.use('/api/v1',router)
+app.use('/api/v1/auth',authRoute)
+
+
 app.get("/",(req,res) =>
 {
     res.send("hello");
