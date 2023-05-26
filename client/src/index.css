@@ -1,0 +1,25 @@
+
+.row 
+{
+    border: 1px solid black;
+    width: 100%;
+    background-color: lightblue;
+}
+.row > div 
+{
+    border: 1px solid red;
+
+}
+.form-banner img{
+    width: 85%;  
+    height: 100%;
+    object-fit: contain;
+}
+
+.form-container 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}

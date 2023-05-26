@@ -46,7 +46,14 @@ const loginController = async (req,res) =>
                 success: false,
             })
         }
-
+        // check role
+        if(isExist.role != req.body.role)
+        {
+            return res.status(500).json({
+                message: "Role doesn't match",
+                success: false,
+                })
+        }
         // compare password
         const isMatch = await bcrypt.compare(password,isExist.password)
         if(!isMatch)
