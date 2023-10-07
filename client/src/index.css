@@ -33,3 +33,11 @@
     justify-content: center;
     min-height: 90vh;
 }
+.navbar{
+    background-color: #000;
+    color: #fff;
+}
+.nav-link,.navbar-brand{
+    background-color: black;
+    color: white;
+}
