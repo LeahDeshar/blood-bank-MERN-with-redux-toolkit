@@ -5,10 +5,10 @@ function Register() {
   return (
     <>
       <div className="row g-0">
-        <div className="col-md-8 form-banner ">
+        <div className="col-md-6 form-banner ">
           <img src="./assets/register-img2.png" alt="registerImage" />
         </div>
-        <div className="col-md-4 form-container">
+        <div className="col-md-6 form-container">
           <Form
             formTitle={"Register"}
             submitBtn={"Register"}

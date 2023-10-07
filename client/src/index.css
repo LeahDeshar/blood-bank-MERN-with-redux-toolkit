@@ -1,15 +1,25 @@
-
-.row 
+/* .container 
 {
     border: 1px solid black;
     width: 100%;
     background-color: lightblue;
+    border: 1px solid red;
+
+} */
+.row 
+{
+    /* border: 1px solid rgba(142, 139, 139, 0.627); */
+    border-radius: 40px;
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 70%;
+    box-shadow: 1px 1px 13px 1px rgba(0, 0, 0, 0.203);
 }
-.row > div 
+/* .row > div 
 {
     border: 1px solid red;
 
-}
+} */
 .form-banner img{
     width: 85%;  
     height: 100%;

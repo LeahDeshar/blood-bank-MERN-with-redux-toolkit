@@ -224,7 +224,7 @@ function Form({formType,submitBtn,formTitle}) {
               <Link to="/login"> Login !</Link>
             </p>
           )}
-          <button className="btn btn-primary" type="submit">
+          <button className="btn btn-primary" type="submit" style={{margin: "10px 0"}}>
             {submitBtn}
           </button>
         </div>
