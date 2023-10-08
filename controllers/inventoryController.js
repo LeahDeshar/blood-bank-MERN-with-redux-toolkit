@@ -26,15 +26,15 @@ exports.createInventoryController = async (req,res) =>
         //when blood is received from a donor and added to the inventory, the inventoryType for that item would be "in".
 
         // donar donates so they cant have inventoryType as in
-        if(inventoryType === "in" && isExistUser.role !== 'donar')
-        {
-            return res.status(500).json({
-                message: "Not a Donar account",
-                success: false,
-                error
-            })
+        // if(inventoryType === "in" && isExistUser.role !== 'donar')
+        // {
+        //     return res.status(500).json({
+        //         message: "Not a Donar account",
+        //         success: false,
+        //         error
+        //     })
 
-        }
+        // }
 
         // hospital receives the blood from out 
         // they should have in as the inventoryType

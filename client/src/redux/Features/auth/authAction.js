@@ -8,6 +8,7 @@ export const userLogin = createAsyncThunk('auth/login',
 async({role,email,password},{rejectWithValue})=>
 {
     try {
+        console.log(role,email,password);
         const {data} =await API.post('/auth/login',{role,email,password})
 
         if(data.success)

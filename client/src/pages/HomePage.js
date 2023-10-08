@@ -30,7 +30,7 @@ const HomePage = () => {
   }, []);
   return (
     <Layout>
-      {/* {user?.role === "admin" && navigate("/admin")} */}
+      {user?.role === "admin" && navigate("/admin")}
       {error && <span>{alert(error)}</span>}
       {loading ? (
         <span>Loading...</span>
@@ -44,7 +44,7 @@ const HomePage = () => {
               style={{ cursor: "pointer" }}
             >
               <i className="fa-solid fa-plus text-success py-4"></i>
-              Add Inventory
+              ➕Add Inventory
             </h4>
             <table className="table ">
               <thead>
